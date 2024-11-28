@@ -9,10 +9,11 @@
 
 <body>
     <!-- Header of website -->
+    <marquee behavior="alternate" direction="">
+        <h1>Welcome to my Portfolio</h1>
+    </marquee>
     <header>
-        <marquee behavior="alternate" direction="">
-            <h1>Welcome to my Portfolio</h1>
-        </marquee>
+
         <nav>
             <ul class="nav-item">
                 <li class="nav-item" id="home"><a href="#header">Home</a></li>
@@ -28,17 +29,18 @@
             <section id="about-section">
                 <article id="about-article">
                     <div>
-                    <p>My name is </p>
-                    <h1>Swapnil Pakhare</h1>
-                    <p>Full Stack Software Developer</p>
-                    <p>I am BTech IT graduate 2024 proficient in Client side as well as Server side software
-                        Development. I have experince in developing Websites/Softwares using HTML, CSS, JavaScript,
-                        Angular, .Net(Asp.net, Asp core, C#) as backend and SQL-Server as database.</p>
+                        <p>My name is </p>
+                        <h1>Swapnil Pakhare</h1>
+                        <p>Full Stack Software Developer</p>
+                        <p>I am BTech IT graduate 2024 proficient in Client side as well as Server side software
+                            Development. I have experince in developing Websites/Softwares using HTML, CSS, Bootstrap,
+                            JavaScript,
+                            JQuery, React, .Net(Asp.net, Asp core, C#) as backend and SQL-Server as database.</p>
                     </div>
                     <button><a href="">Visit Portfolio</a></button>
                 </article>
                 <figure id="about-figure">
-                    <img src="assets/myImage.png" alt="myImage">
+                    <img src="assets/myImage.jpg" alt="myImage">
                 </figure>
             </section>
 
@@ -129,58 +131,71 @@
             </section>
 
             <section>
-                <fieldset id="project-section">
+                <fieldset id="project-part">
                     <legend>My Projects</legend>
-                    <section class="project" id="project-1">
-                        <figure class="project-figure">
-                            <img src="/assets/project-sample.png" alt="project1">
-                        </figure>
-                        <article class="project-description">
-                            <h1>Employee Management System</h1>
-                            <p>In this project i created a client side page for employees and server side page to manage the
-                                website by Employeer</p>
-                        </article>
-                    </section>
-    
-                    <section class="project" id="project-1">
-                        <figure class="project-figure">
-                            <img src="" alt="project1">
-                        </figure>
-                        <article class="project-description">
-                            <h1>Employee Management System</h1>
-                            <p>In this project i created a client side page for employees and server side page to manage the
-                                website by Employeer</p>
-                        </article>
-                    </section>
-    
-                    <section class="project" id="project-1">
-                        <figure class="project-figure">
-                            <img src="" alt="project1">
-                        </figure>
-                        <article class="project-description">
-                            <h1>Employee Management System</h1>
-                            <p>In this project i created a client side page for employees and server side page to manage the
-                                website by Employeer</p>
-                        </article>
-                    </section>
+                    <div id="project-section">
+                        <section class="project" id="project-1">
+                            <figure class="project-figure">
+                                <img src="/assets/project/tourism.jpg" alt="project1">
+                            </figure>
+                            <article class="project-description">
+                                <h1>Tourism Travel Guide</h1>
+                                <p>In this project i created a Beautiful and Responsive UI for to help tourists find
+                                    best
+                                    places to visit and enjoy while travelling.</p>
+                            </article>
+                        </section>
 
-                    <button><a href="">See all projects</a></button>
+                        <section class="project" id="project-1">
+                            <figure class="project-figure">
+                                <img src="assets/project/schoolMS.jpg" alt="project1">
+                            </figure>
+                            <article class="project-description">
+                                <h1>School Management System</h1>
+                                <p>In this project i created a client side page for employees and server side page to
+                                    manage
+                                    the
+                                    website by Employeer</p>
+                            </article>
+                        </section>
+
+                        <section class="project" id="project-1">
+                            <figure class="project-figure">
+                                <img src="assets/project/employeeMS.jpg" alt="project1">
+                            </figure>
+                            <article class="project-description">
+                                <h1>Employee Management System</h1>
+                                <p>In this project i created a client side page for employees and server side page to
+                                    manage
+                                    the
+                                    website by Employeer</p>
+                            </article>
+                        </section>
+                    </div>
+
+                    <div id="project-button">
+                        <button><a href="">See More</a></button>
+                    </div>
 
                 </fieldset>
             </section>
         </section>
     </main>
     <footer>
-        <fieldset id="contact">
-            <legend> <h1>Contact me</h1></legend>
+        <fieldset id="contact-section">
+            <!-- <legend id="main">Contact me</legend> -->
             <div>
                 <form action="submit" method="post">
                     <fieldset id="contact">
                         <legend>Contact Information</legend>
-                        <div><input type="text" placeholder="Your Full Name" style="width: 100%;"></div>
-                        <div><input type="email" name="email" id="" placeholder="Your Email" style="width: 100%;"></div>
                         <div>
-                            <label for="reason">Choose Subject </label>
+                            <input type="text" placeholder="Your Full Name">
+                        </div>
+                        <div>
+                            <input type="email" name="email" id="" placeholder="Your Email">
+                        </div>
+                        <div id="description">
+                            <label for="reason">Select Reason</label>
                             <select name="subject" id="">
                                 <option value="">Assign Project</option>
                                 <option value="">Hire Me</option>
@@ -189,8 +204,8 @@
                                 <option value="">Give Feedback</option>
                                 <option value="">Other</option>
                             </select>
+                            <textarea name="" id="">Write Description</textarea>
                         </div>
-                        <textarea name="" id="" style="width: 100%; height: 150px;">Write Description</textarea>
                     </fieldset>
                 </form>
             </div>
@@ -204,23 +219,30 @@
                                 <p>Block C2-1106, Blue Dice Society</p>
                                 <p>Near nageshwar vidyalay, Chikhali, 411062</p>
                             </div>
-                            <button>
-                                <a href="https://g.co/kgs/Qcge452"><img src="/assets/google-maps-icon.png" alt="map"
-                                        style="height: 30px;">
+                            <div id="map">
+                                <a href="https://g.co/kgs/Qcge452" target="_blank">
+                                    <button>
+                                        <img src="/assets/google-maps-icon.png" alt="map">
+                                    </button>
                                     <p>See Map</p>
                                 </a>
-                            </button>
+                            </div>
                         </fieldset>
                     </div>
                 </address>
             </div>
         </fieldset>
         <div class="social-links">
-            <div id="linkdln"><a href=""><img src="" alt="linkdln"></a></div>
-            <div id="instagram"><a href=""><img src="" alt="instagram"></a></div>
-            <div id="whatsapp"><a href=""><img src="" alt="whatsapp"></a></div>
+            <a href=""><img src="assets/social/linkedin.png" alt="linkdln"></a>
+            <a href=""><img src="assets/social/instagram.png" alt="instagram"></a>
+            <a href=""><img src="assets/social/whatsapp.png" alt="whatsapp"></a>
+            <p><=</p>
+
+            <p>Ckeckout my social-media</p>
         </div>
-        <p>&copy; 2024 Swapnil Pakhare. All rights reserved.</p>
+        <div class="copyright">
+            <p>&copy; 2024 Swapnil Pakhare. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 
