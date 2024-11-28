@@ -1,118 +1,214 @@
-*{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
+/* Body-Part */
 body{
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
-/* Common Section Style */
-section{
+/* Header-Part*/
+marquee{
     width: 100%;
 }
 
-section article{
-    width: 50%;
+marquee h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-section figure{
-    width: 50%;
-    display: flex;
-}
-
-/* Header-Section */
 header{
     width: 100%;
 }
 
-header marquee{
-    border-top: 1px solid blue;
-    border-bottom: 1px solid blue;
-}
-
-header nav{
+nav{
+    background-color: coral;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
 }
 
-header nav ul{
+nav .nav-item{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 20px;
+    column-gap: 25px;
+}
+
+nav ul li{
     list-style: none;
 }
 
-nav #home{
-    font-weight: bold;
-    font-size: 18px;
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
-nav #contact{
-    border: 2px solid red;
+#home a{
+    font-weight: bold;
+    border-bottom: 3px solid white;
     border-radius: 5px;
     padding: 5px;
 }
 
-header nav ul li a{
-    text-decoration: none;
-    color: red;
+/* Main-Part */
+main{
+    width: 100%;
+}
+
+section{
+    padding-bottom: 20px;
 }
 
 /* About-Section */
 #about-section{
     display: flex;
     flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+}
+
+#about-article{
+    text-align: center;
+}
+
+#about-article h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about-article p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#about-article button{
+    border: 2px solid coral;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+
+#about-article button:hover{
+    background-color: coral;
+    color: white;
+    border-radius: 25px;
+    a{
+        color: white;
+    }
+}
+
+#about-article div{
+    padding-bottom: 10px;
+}
+
+#about-article button a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
 }
 
 #about-figure img{
-    height: 300px;
-    width: 300;
+    width: 300px;
 }
 
 /* Skill-Section */
-.skill-section{
+#skill-section{
+    background-color: rgb(244, 230, 225);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 50px;
 }
 
-section .skill{
-    width: 200px;
-    height: auto;
+#skill-section legend{
+    color: coral;
+    font-size: 1.5rem;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+#skill-section .skill{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.skill img{
+#skill-section .skill img{
     width: 50px;
     height: 50px;
-    padding: 5px;
-    border: 1px solid blue;
-    border-radius: 5px;
+    border: 2px solid coral;
+    border-radius: 25px;
+    padding: 10px;
 }
 
 /* Project-Section */
-.project img{
-    width: 300px;
-    height: 200px;
-    padding: 5px;
-    border: 1px solid blue;
-    border-radius: 5px;
+#project-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-/* footer-Section */
-footer{
-    background-color: black;
+#project-section legend{
+    color: coral;
+    font-size: 1.5rem;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+#project-section .project{
+    flex: 1 1 calc(30%);
+    text-align: center;
+}
+
+#project-section img{
+    width: 200px;
+}
+
+#project-section button{
+    border: 2px solid coral;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+
+#project-section button:hover{
+    background-color: coral;
     color: white;
+    border-radius: 25px;
+    a{
+        color: white;
+    }
+}
+
+#project-section button a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+/* Footer-Part */
+footer fieldset{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer div{
+    flex: 1 1 calc(40%);
+}
+
+fieldset #contact{
+
+}
+
+fieldset #address{
+    display: flex;
+    flex-direction: column;
 }
