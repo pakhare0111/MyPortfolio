@@ -362,6 +362,20 @@ footer div {
         gap: 10px;
     }
 
+    #contact-section{
+        display: block;
+
+        form div{
+            width: 90%;
+            text-align: center;
+
+        }
+        #description textarea{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
     marquee{
         display: none;
     }
