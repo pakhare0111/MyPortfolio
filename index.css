@@ -25,6 +25,10 @@ header {
     position: sticky;
     top: 0;
     z-index: 1500;
+
+    img{
+        width: 40px;
+    }
 }
 
 nav {
@@ -36,6 +40,10 @@ nav {
     box-shadow: 2px 2px 8px white;
     padding: 5px;
     border-radius: 10px;
+
+    #contact{
+        margin-right: 10px;
+    }
 }
 
 nav .nav-item {
